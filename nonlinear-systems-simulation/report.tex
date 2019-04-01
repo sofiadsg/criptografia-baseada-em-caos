@@ -71,10 +71,10 @@ Criptografia Baseada em Caos - 1/2019
     Essa simulação foi feita com passo de 1ms entre as iterações e está no script \\
     \texttt{nonlinear\_system\_simulation.m}. Os gráficos obtidos são mostrados abaixo:
     \begin{figure}[H]
-        \subfloat[][Variável X]{\includegraphics[scale=0.5]{nonlinear-systems-simulation/plotx.png}\label{origx}} \qquad
-        \subfloat[][Variável Y]{\includegraphics[scale=0.5]{nonlinear-systems-simulation/ploty.png}\label{origy}} \par       
-        \subfloat[][Variável Z]{\includegraphics[scale=0.5]{nonlinear-systems-simulation/plotz.png}\label{origz}} \qquad
-        \subfloat[][Variável U]{\includegraphics[scale=0.5]{nonlinear-systems-simulation/plotu.png}\label{origu}} \par
+        \subfloat[][Variável X]{\includegraphics[scale=0.5]{plotx.png}\label{origx}} \qquad
+        \subfloat[][Variável Y]{\includegraphics[scale=0.5]{ploty.png}\label{origy}} \par       
+        \subfloat[][Variável Z]{\includegraphics[scale=0.5]{plotz.png}\label{origz}} \qquad
+        \subfloat[][Variável U]{\includegraphics[scale=0.5]{plotu.png}\label{origu}} \par
         \caption{Gráficos das variáveis de estado do sistema no tempo}        
     \end{figure}
 
@@ -94,26 +94,26 @@ Criptografia Baseada em Caos - 1/2019
 
     Nas figuras abaixo, que foram geradas com o script \texttt{time\_scaling.m} podemos ver uma comparação entre os sinais originais e os escalonados no tempo, que mostram que os 20 primeiros segundos do sistema original são iguais aos 2 primieiros segundos do sistema escalonado no tempo:
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotx.png}\label{xorig}}
-        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotx_timescaled.png}\label{xts}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotx.png}\label{xorig}}
+        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{plotx_timescaled.png}\label{xts}}
         \caption{Comparação entre o sistema original e o escalonado para a variável X}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/ploty.png}\label{yorig}}
-        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/ploty_timescaled.png}\label{yts}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{ploty.png}\label{yorig}}
+        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{ploty_timescaled.png}\label{yts}}
         \caption{Comparação entre o sistema original e o escalonado para a variável Y}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotz.png}\label{zorig}}
-        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotz_timescaled.png}\label{zts}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotz.png}\label{zorig}}
+        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{plotz_timescaled.png}\label{zts}}
         \caption{Comparação entre o sistema original e o escalonado para a variável Z}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotu.png}\label{uorig}}
-        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotu_timescaled.png}\label{uts}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotu.png}\label{uorig}}
+        \subfloat[][Gráfico do sistema escalonado no tempo]{\includegraphics[scale = 0.55]{plotu_timescaled.png}\label{uts}}
         \caption{Comparação entre o sistema original e o escalonado para a variável U}
     \end{figure}
 
@@ -142,26 +142,46 @@ Criptografia Baseada em Caos - 1/2019
 
     Nas figuras abaixo, podemos ver uma comparação entre os sinais originais e os escalonados na amplitude, que mostram que o escalonamento manteve a forma dos sistemas e diminuiu sua amplitude, conforme desejado.
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotx.png}\label{xorigx}}
-        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotx_ampscaled.png}\label{xas}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotx.png}\label{xorigx}}
+        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{plotx_ampscaled.png}\label{xas}}
         \caption{Comparação entre o sistema original e o escalonado para a variável X}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/ploty.png}\label{yorigy}}
-        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/ploty_ampscaled.png}\label{yas}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{ploty.png}\label{yorigy}}
+        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{ploty_ampscaled.png}\label{yas}}
         \caption{Comparação entre o sistema original e o escalonado para a variável Y}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotz.png}\label{zorigz}}
-        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotz_ampscaled.png}\label{zas}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotz.png}\label{zorigz}}
+        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{plotz_ampscaled.png}\label{zas}}
         \caption{Comparação entre o sistema original e o escalonado para a variável Z}
     \end{figure}
 
     \begin{figure}[H]
-        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotu.png}\label{uorigu}}
-        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{nonlinear-systems-simulation/plotu_ampscaled.png}\label{uas}}
+        \subfloat[][Gráfico do sistema original]{\includegraphics[scale = 0.55]{plotu.png}\label{uorigu}}
+        \subfloat[][Gráfico do sistema escalonado na amplitude]{\includegraphics[scale = 0.55]{plotu_ampscaled.png}\label{uas}}
         \caption{Comparação entre o sistema original e o escalonado para a variável U}
-    \end{figure}    
+    \end{figure}
+    
+\section{Diagramas de fase}
+Foram feitos diagramas de fase para as equações do seguinte sistema:
+\begin{equation}
+    \left\{
+        \begin{array}{l}
+          \dot{x} = z + (y - a)x\\
+          \dot{y} = 1 - by - x^2\\
+          \dot{z} = -x - cz
+        \end{array}
+      \right.
+\end{equation}
+Foram escolhidas 10 condições iniciais igualmente espaçadas entre -4 e 4 para x, entre 0 e 4 para y e entre -2 e 2 para z. Os gráficos de fases duas a duas foram plotados no script \texttt{phase\_diagrams.m} e são mostrados abaixo:
+\begin{figure}[H]
+    \subfloat[][Gráfico das variáveis X e Y]{\includegraphics[scale = 0.5]{xy.png}\label{xy}}
+    \subfloat[][Gráfico das variáveis Y e Z]{\includegraphics[scale = 0.5]{yz.png}\label{yz}} \par
+    \subfloat[][Gráfico das variáveis X e Z]{\includegraphics[scale = 0.5]{xz.png}\label{xz}}
+    \subfloat[][Gráfico das três variáveis]{\includegraphics[scale = 0.5]{xyz.png}\label{xyz}}
+    \caption{Diagramas das variáveis do sistema}
+\end{figure}
 \end{document}
